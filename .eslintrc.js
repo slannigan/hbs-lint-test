@@ -9,5 +9,48 @@ module.exports = {
     browser: true
   },
   rules: {
+    "array-bracket-spacing": ["error", "never"],
+    "arrow-body-style": ["error", "always"],
+    "arrow-parens": ["error", "always"],
+    "arrow-spacing": ["error", { "before": true, "after": true }],
+    "brace-style": ["error", "1tbs", {
+      "allowSingleLine": false
+    }],
+    "comma-dangle": ["error", "never"],
+    "comma-spacing": ["error", { "before": false, "after": true }],
+    "eqeqeq": ["error", "always"],
+    "eol-last": ["error", "always"],
+    "indent": ["error", 2, {
+      "MemberExpression": 0,
+      "SwitchCase": 1
+    }],
+    "key-spacing": ["error", {
+      "afterColon": true,
+      "beforeColon": false,
+      "mode": "strict"
+    }],
+    "keyword-spacing": ["error", {
+      "after": true,
+      "before": true,
+      "overrides": {
+        "function": { "after": false }
+      }
+    }],
+    "no-multi-spaces": "error",
+    "no-multiple-empty-lines": ["error", { "max": 2, "maxEOF": 1 }],
+    "no-param-reassign": ["error", { "props": true, "ignorePropertyModificationsFor": ["req"] }],
+    "no-sequences": "error",
+    "no-trailing-spaces": ["error", {
+      "skipBlankLines": true
+    }],
+    "no-unneeded-ternary": "error",
+    "no-var": "error",
+    "no-whitespace-before-property": "error",
+    "padded-blocks": ["error", "never"],
+    "prefer-const": "error",
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"],
+    "space-in-parens": ["error", "never"],
+    "spaced-comment": ["error", "always"]
   }
 };
