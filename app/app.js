@@ -15,4 +15,10 @@ App = Ember.Application.extend({
 
 loadInitializers(App, config.modulePrefix);
 
+// These should cause lint errors in Hound
+something = {
+  key1: true,
+   key2: false
+}
+
 export default App;
